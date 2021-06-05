@@ -21,10 +21,10 @@ class LandingController extends Controller
         return view('index',compact(['post']));
     }
     public function about(){
-
+        return view('about');
     }
-
-    public function content(){
-        
+    
+    public function contact(){
+        return view('contact');
     }
 }

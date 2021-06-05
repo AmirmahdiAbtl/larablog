@@ -33,7 +33,7 @@
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a style="font-size: 2rem" class="header__logo" href="{{ route('index') }}"><span style="color: rgb(9, 136, 175)">Lara</span>Blog</a>
+            <a style="font-size: 2rem" class="header__logo" href="{{ route('index') }}">Blog<span style="color: rgb(9, 136, 175)">Lara</span></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <a href="{{ route('logout') }}" class="logout" title="خروج" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"></a>

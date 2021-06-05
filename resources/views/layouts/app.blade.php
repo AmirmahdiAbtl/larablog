@@ -18,12 +18,14 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
+    {{ $css ?? "" }}
 <header class="c-header">
     <div class="container container--responsive container--white">
         <div class="c-header__row ">
             <div class="c-header__right">
                 <div class="logo">
-                    <a href="{{route('index')}}" class="logo__img"></a>
+                    <a style="font-size: 2rem" class="header__logo" href="{{ route('index') }}">Blog<span style="color: rgb(9, 136, 175)">Lara</span></a>
+
                 </div>
                 <div class="c-search width-100 ">
                     <form action="{{ route('index') }}" class="c-search__form position-relative">
@@ -88,8 +90,8 @@
                        @endif
                     </li>
                 @endforeach
-                <li class="nav__item"><a href="{{ route('about') }}" class="nav__link">درباره ما</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">تماس باما</a></li>
+                <li class="nav__item"><a href="{{ route('about') }}" class="nav__link">درباره من</a></li>
+                <li class="nav__item"><a href="{{ route('contact') }}" class="nav__link">تماس باما</a></li>
             </ul>
         </div>
     </nav>
@@ -102,12 +104,10 @@
 
     <div class="container">
         <div class="footer__links">
-            <a href="" class="footer__link">لینک اول</a>
-            <a href="" class="footer__link">لینک اول</a>
-            <a href="" class="footer__link">لینک اول</a>
-            <a href="" class="footer__link">لینک اول</a>
-            <a href="" class="footer__link">لینک اول</a>
-            <a href="" class="footer__link">لینک اول</a>
+            <a href="{{ route('index') }}" class="footer__link">صقحه نخست</a>
+            <a href="{{ route('about') }}" class="footer__link">درباره من</a>
+            <a href="{{ route('contact') }}" class="footer__link">تماس با من</a>
+            <a href="{{ route('login') }}" class="footer__link">صفخه ورود</a>
         </div>
         <div class="footer__hr"></div>
         <div class="footer__about">

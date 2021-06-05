@@ -1,26 +1,20 @@
 <x-app-layout>
     <x-slot name="title">
-         - درباره من
+         - تماس با من
     </x-slot>
+    
 <main class="bg--white" style="margin-top: 9.5rem; margin-bottom: 0.75rem">
     <div class="container">
         <div class="card">
-            <h1>درباره من</h1>
+            <h1>تماس با من</h1>
             <div class="img">
                 <img class="images" src="{{ asset('/images/about.jpg') }}" alt="">
             </div>
-            <h3>
-                برنامه نویس Full-Stack 
-            </h3>
-            <p>
-                 توسعه دهنده Laravel , React , Livewire
-            </p>
-            <p>
-                دیگر توانایی ها git , Docker , Sass , SVG , REST full Api , ....
-            </p>
-            <p>
-                برنامه نویس فول استک شرکت پازل از سال 99
-            </p>
+            <ul>
+                <li>َشماره تماس : 09134430898</li>
+                <li>linkedin : <a style="color: rgb(0, 174, 255)" href="https://www.linkedin.com/in/amirmahdi-abootalebi/">کلیک کنید</a></li>
+                <li>github : <a style="color: rgb(0, 174, 255)" href="https://github.com/AmirmahdiAbtl">کلیک کنید</a></li>
+            </ul>
             </div>
         </div>
     </div>
@@ -42,8 +36,8 @@
             border-radius: 50%;
             border: 0.5rem solid rgb(0, 137, 161);
        }
-       p{
-           padding-bottom: 0.5rem;
+       li{
+           padding-bottom: 1rem;
        }
        
    </style>
