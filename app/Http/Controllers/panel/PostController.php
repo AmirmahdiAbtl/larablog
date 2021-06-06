@@ -32,6 +32,7 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'title' => ['required','string','max:255'],
             'tags' => ['required','array'],
@@ -40,7 +41,7 @@ class PostController extends Controller
             'content' => ['required'],
         ]);
 
-        $categoryId = Category::whereIn('name',$request->tags)->get()->pluck('id')->toArray();
+        $categoryId = Category::whereIn('slug',$request->tags)->get()->pluck('id')->toArray();
         if(count($categoryId) < 1){
             throw ValidationException::withMessages([
                 'category' => ['دسته بندی یافت نشد'],

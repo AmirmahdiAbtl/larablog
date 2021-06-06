@@ -1,8 +1,12 @@
 {
     "disks": [
       {
-        "name": "images",
-        "mountTo": "public"
+        "name": "banner",
+        "mountTo": "public/images/banner"
+      },
+      {
+        "name": "poster",
+        "mountTo": "public/images/posts"
       }
     ]
   }

@@ -13,8 +13,8 @@
                 <div class="single-page__img">
                     <img class="single-page__img-src" src="{{ $post->getBannerUrl() }}" alt="">
                 </div>
-                <div class="single-page__content">
-                    <p class="single-page__txt">
+                <div class="single-page__content" style="width: 100%">
+                    <p class="single-page__txt" style="width: 100%">
                        {!! $post->content !!}
                     </p>
                 </div>
